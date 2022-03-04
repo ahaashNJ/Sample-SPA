@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { MdFingerprint} from 'react-icons/md'
 import { FaBars, FaTimes } from 'react-icons/fa'
-import { Button } from '../components/Button'
+// import { Button } from '../components/Button'
 import './Navbar.css'
 import { IconContext } from 'react-icons/lib'
 
@@ -45,7 +45,7 @@ function Navbar() {
                     {click ? <FaTimes/> : <FaBars/>}
                 </div>
 
-                <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+                {/* <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                   <li className="nav-item">
                     <Link to='/' className="nav-links">
                       Home
@@ -75,7 +75,7 @@ function Navbar() {
                       </Link>
                     )}
                   </li>
-                </ul>
+                </ul> */}
             </div>
         </div>
         </IconContext.Provider>
